@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome {{user.username}}</h1>
+    <h1><a href="{% url 'list' %}">view articles</a></h1>
+    <h1><a href="{% url 'create' %}">post a article</a></h1>
+    <h1><a href="{% url 'logout' %}">logout</a></h1>
+    <div>
+        <p> this is veltech blog forum</p>
+    </div>
+</body>
+</html>
