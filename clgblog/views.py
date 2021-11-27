@@ -23,3 +23,8 @@ def article_create(request):
     else:
         form = forms.CreateArticle()
     return render(request, 'clgblog/article_create.html', { 'form': form })
+
+def article_detail(request, slug):
+    # return HttpResponse(slug)
+    article = Article.objects.get(slug=slug)
+    return render(request, 'clgblog/article_detail.html', { 'article': article })
